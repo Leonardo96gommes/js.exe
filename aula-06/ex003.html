@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex002</title>
+    <style>
+      body {
+        background-color: #5d5e64;
+        color: white;
+        font: normal 1.5rem arial;
+      }
+
+      h1 {
+        color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>olá, mundo!</h1>
+    <p>já me livrei da maldição!</p>
+
+    <script>
+      var n1 = Number(prompt("Digite um número: ?")); // prompt recebe os valores em forma de string
+      var n2 = Number(prompt("Digite outro número: ?"));
+      var s = n1 + n2;
+
+      // alert("A soma dos valores é " + s); // concatenação 
+
+      alert(`A soma entre ${n1} e ${n2} é igual a ${s}`); // Template string
+
+     /* s.length // quantos caracteres a string tem
+        s.toUpperCase() // tudo para MAIÚSCULA
+        s.toLowCase() // tudo para MINÚSCULA */
+
+
+
+      // (number + number ) para adição
+      // (string + string ) para concatenação
+
+      // Formas de converter o prompt para números
+
+      // number.parseInt(n)  vai aparecer numero inteiro
+      // number.parseFloat(n) vai aparecer numero real
+      // number(n) o js vai decidir ce o numero é inteiro ou real
+
+
+      // Formas de converter o prompt de numeros para strings
+
+      // String(n)
+      // n.toString()  conversão ao contrario para string
+
+     
+    </script>
+  </body>
+</html>
