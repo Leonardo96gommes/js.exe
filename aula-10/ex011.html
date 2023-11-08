@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubra qual...</title>
+  </head>
+  <body>
+    <h1>Descubra em qual pais você nasceu!</h1>
+    Qual seu pais? : <input type="text" name="pais" id="pais" />
+    <input type="button" value="verificar" onclick="descobrir()" />
+    <div id="res"></div>
+    <script>
+      function descobrir() {
+        var pais = window.document.getElementById("pais");
+        var res = window.document.getElementById("res");
+        var nasceu = (pais.value);
+        if (nasceu == "brasil") {
+          res.innerHTML = "<p><strong>Você é brasileiro(a)!</strong></p>";
+        } else {
+          res.innerHTML = "<p><strong>Você não é brasileiro(a)!!</strong></p>";
+        }
+      }
+    </script>
+  </body>
+</html>
