@@ -14,8 +14,8 @@
       function descobrir() {
         var pais = window.document.getElementById("pais");
         var res = window.document.getElementById("res");
-        var nasceu = (pais.value);
-        if (nasceu == "brasil") {
+        var nasceu = (pais.value).toUpperCase();
+        if (nasceu === "BRASIL") {
           res.innerHTML = "<p><strong>Você é brasileiro(a)!</strong></p>";
         } else {
           res.innerHTML = "<p><strong>Você não é brasileiro(a)!!</strong></p>";
