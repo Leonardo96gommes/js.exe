@@ -22,25 +22,27 @@
     </div>
     <div id="res"></div>
     <script>
-        function buscar() {
-            let idadeInput = document.getElementById("idade");
-            let res = document.getElementById("res");
-            let idade = parseInt(idadeInput.value);
+      function buscar() {
+        let idadeInput = document.getElementById("idade");
+        let res = document.getElementById("res");
+        let idade = parseInt(idadeInput.value);
 
-            if (!isNaN(idade)) {
-                if (idade >= 0 && idade <= 12) {
-                    res.innerHTML = "<p><strong>Você é Criança!</strong></p>";
-                } else if (idade >= 13 && idade <= 64) {
-                    res.innerHTML = "<p><strong>Você é Adulto!</strong></p>";
-                } else if (idade >= 65 && idade <= 120) {
-                    res.innerHTML = "<p><strong>Você é Idoso!</strong></p>";
-                } else {
-                    res.innerHTML = "<p><strong>Dados incorretos. Por favor, insira uma idade válida.</strong></p>";
-                }
-            } else {
-                res.innerHTML = "<p><strong> Dados incorretos. Por favor, insira uma idade válida.</strong></p>";
-            }
+        if (!isNaN(idade)) {
+          if (idade >= 0 && idade <= 12) {
+            res.innerHTML = "<p><strong>Você é Criança!</strong></p>";
+          } else if (idade >= 13 && idade <= 64) {
+            res.innerHTML = "<p><strong>Você é Adulto!</strong></p>";
+          } else if (idade >= 65 && idade <= 120) {
+            res.innerHTML = "<p><strong>Você é Idoso!</strong></p>";
+          } else {
+            res.innerHTML =
+              "<p><strong>Dados incorretos. Por favor, insira uma idade válida.</strong></p>";
+          }
+        } else {
+          res.innerHTML =
+            "<p><strong> Dados incorretos. Por favor, insira uma idade válida.</strong></p>";
         }
+      }
     </script>
   </body>
 </html>
