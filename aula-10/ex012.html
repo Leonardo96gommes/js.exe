@@ -22,6 +22,16 @@
     </div>
     <div id="res"></div>
     <script>
+      document
+        .getElementById("idade")
+        .addEventListener("keyup", function (event) {
+          // Verifica se a tecla pressionada é a tecla Enter (código 13)
+          if (event.keyCode === 13) {
+            // Chama a função buscar() quando a tecla Enter é pressionada
+            buscar();
+          }
+        });
+
       function buscar() {
         let idadeInput = document.getElementById("idade");
         let res = document.getElementById("res");
