@@ -32,5 +32,5 @@ function calc() {
       return;
   }
 
-  document.getElementById("res").innerHTML = `Resultado: ${resultado}`;
+  document.getElementById("res").innerHTML = `Resultado: <strong>${resultado}<strong/>`;
 }
